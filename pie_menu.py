@@ -10,7 +10,7 @@ class VIEW3D_PIE_MT_bjstoolbox(bpy.types.Menu):
     def draw(self, context):
         layout = self.layout
         pie = layout.menu_pie()
-        if context.mode == "EDIT":
+        if context.mode == "EDIT_MESH":
             pie.operator("object.quick_set_origin")
         if context.mode == "OBJECT":
             pie.operator("object.auto_smart_uv")

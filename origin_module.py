@@ -30,7 +30,7 @@ class SetOriginToSelection(bpy.types.Operator):
 
     @classmethod
     def poll(cls, context):
-        return context.mode == "EDIT"
+        return context.mode == "EDIT_MESH"
 
     def execute(self, context):
         set_origin_to_selection(context)
